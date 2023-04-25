@@ -786,14 +786,6 @@ p {
 		padding: 5rem 18rem;
 	}
 
-	.servicios-container h1 {	
-		width: 30%;
-	}
-	
-	.servicios-container p {
-		width: 40%;
-	}
-
 	.servicios-flex .servicios {
 		max-width: calc(33.33% - 15px);
 		margin: 0 0.625rem;
