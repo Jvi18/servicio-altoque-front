@@ -645,6 +645,11 @@ p {
 
 /* When the browser is at least 768px and above */
 @media screen and (min-width: 768px) {
+	/* Regla css para que el diseño no se modifique en varias pantallas */
+	.home-container {
+		min-width: 90rem; /* el ancho minimo en px es 1440px, esto hace que en pantallas aun mas anchas no se deforme */
+	}
+
 	.header {
 		background-image: url(../assets/img/header-desktop.jpg);
 		background-size: cover;
@@ -783,7 +788,7 @@ p {
 	}
 
 	.servicios-container {
-		padding: 5rem 18rem;
+		padding: 5rem 16rem;
 	}
 
 	.servicios-flex .servicios {
@@ -804,15 +809,21 @@ p {
 	.servicios-flex .flickity-prev-next-button.next {
 		right: -8rem;
 	}
-	
-	
+
+	.cuadro-flex {
+		justify-content: space-between;
+		padding: 2.5625rem 1.25rem 0 1.125rem;
+	}
+
 	.cuadro-flex h2 {
-		font-size: 2rem;
-		margin-left: 1rem;
+		font-size: 1.6875rem;
+		line-height: normal;
+		margin-left: 0;
+		margin-bottom: 0;
 	}
 
 	.cuadro-flex img {
-		margin-left: 5%;
+		margin-top: 0;
 	}
 
 	.servicios-container a {
