@@ -745,12 +745,14 @@ p {
 	}
 
 	.buscador {
-		position: absolute;
-		top: 10.9375rem;
-		left: 4rem;
-		height: auto;
-		max-width: 42.375rem;
+		max-width: 90rem;
+		height: 0;
+		position: relative;
+		top: -30rem;
+		justify-content: flex-start;
 		background: transparent;
+		margin: auto;
+		padding: 0;
 	}
 
 	.buscador h3 {
@@ -772,6 +774,7 @@ p {
 	.buscador-flex {
 		padding-top: 5rem;
 		padding-left: 5rem;
+		max-width: 45%;
 	}
 
 	.buscador-flex .buscador-barra-flex {
@@ -1061,7 +1064,6 @@ p {
 	
 	}
 
-
 	.prensa {
 		padding: 5rem;
 	}
@@ -1138,7 +1140,6 @@ p {
 		top: 216px;
 	}
 
-
 	.footer {
 		width: 100%;
 	}
@@ -1160,7 +1161,6 @@ p {
 		margin-right: 5rem;
 
 	}
-
 
 	.footer-item h2 {
 		height: 30px;
@@ -1222,7 +1222,6 @@ p {
 		gap: 15rem;
 	}
 
-	
 	.copyright {
 		display: block;
 		height: 20px;
@@ -1242,5 +1241,15 @@ p {
 		font-size: 14px;
 		color: #3333335C;
 		font-weight: 400;
+	}
+}
+
+
+/* When the browser is at least 1440px and above */
+@media screen and (min-width: 1440px) {
+	.header-ham {
+		max-width: 100.9375rem;
+		margin: auto;
+		justify-content: space-between;
 	}
 }
