@@ -805,7 +805,7 @@ p {
 	}
 
 	.patrocinadores {
-		padding: 4rem;
+		padding: 6rem 4rem;
 	}
 
 	.patrocinadores-mobile {
@@ -836,8 +836,6 @@ p {
 		padding-top: 3rem;
 		font-size: 48px;
 		line-height: 57.6px;
-	
-
 	}
 
 	.servicios-container p {
@@ -962,7 +960,7 @@ p {
 			rgba(255, 255, 255, 0) 101.72%
 		);
 		width: 100%;
-		padding-bottom: 10rem;
+		padding-bottom: 15rem;
 	}
 
 
@@ -1107,6 +1105,8 @@ p {
 	}
 
 	.prensa-desktop {
+		max-width: 1440px;
+		margin: auto;
 		display: block;
 	}
 
