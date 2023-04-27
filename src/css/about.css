@@ -189,68 +189,23 @@ html {
 }
 
 
-.buscador {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #e5e4f6;
-	width: 100%;
-	height: 100%;
-	font-family: 'Space Grotesk';
-	padding: 1.5rem;
+.header-text h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    color: #ED4AB3;
+    padding-top: 3rem;
 }
 
-.buscador-flex h3 {
-	padding-top: 1rem;
-	font-size: 16px;
-	font-weight: 500;
-	color: #9b28ad;
+.header-text p {
+    font-family: 'DM Sans';
+    color: #FFFFFF;
+    font-size: 1rem;
 }
 
-.buscador-flex h1 {
-	padding-bottom: 1rem;
-	font-size: 50px;
-	font-weight: 700;
-	color: #333333;
-}
-
-.buscador-flex p {
-	padding-top: 1rem;
-	padding-bottom: 2rem;
-	font-family: 'DM Sans';
-	color: #333333;
-	font-size: 1rem;
-	font-weight: 400;
-	
-}
-
-.buscador-flex .buscador-barra-flex {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
-	padding-top: 1.5rem;
-	padding-bottom: 1.5rem;
-}
-
-.buscador-barra-flex input {
-	left: 17px;
-	border-radius: 15px;
-	width: 200px;
-	border-style: none;
-	height: 48px;
-	text-align: start;
-	padding: 1rem;
-	margin-right: -1rem;
-}
-
-.buscador-barra-flex button {
-	width: 140px;
-	border-radius: 15px;
-	height: 48px;
-	border-style: none;
-	background-color: #2d65ee;
-	color: #ffffff;
+.header-text h1 {
+    color: #FFFFFF;
+    font-size: 3rem;
+    width: 20%;
 }
 
 .patrocinadores {
@@ -581,56 +536,30 @@ html {
 		font-size: 1rem;
 	}
 
-	.buscador {
-		max-width: 90rem;
-		height: 0;
-		position: relative;
-		top: -30rem;
-		justify-content: flex-start;
-		background: transparent;
-		margin: auto;
-		padding: 0;
-	}
+	.header-text {
+        text-align: left;
+        padding-left:25rem;
+        padding-top: 8rem;
+    }
 
-	.buscador h3 {
-		font-size: 1rem;
-		color: #ed4ab3;
-	}
+    .header-text h3 {
+        font-size: 1.7rem;
+        font-weight: 500;
+        color: #ED4AB3;;
+    }
+    
+    .header-text p {
+        font-family: 'DM Sans';
+        color: #FFFFFF;
+        font-size: 1.6rem;
+    }
+    
+    .header-text h1 {
+        color: #FFFFFF;
+        font-size: 5rem;
+        width: 20%;
+    }
 
-	.buscador h1 {
-		color: #fff;
-		font-size: 3.75rem;
-		padding-right: 10rem;
-	}
-
-	.buscador p {
-		padding-bottom: 0;
-		color: #fff;
-	}
-
-	.buscador-flex {
-		padding-top: 5rem;
-		padding-left: 5rem;
-		max-width: 45%;
-	}
-
-	.buscador-flex .buscador-barra-flex {
-		justify-content: flex-start;
-	}
-
-	.buscador-barra-flex input {
-		width: 29.125rem;
-		padding: 1rem;
-		font-size: 1rem;
-	}
-	
-	.buscador-barra-flex button {
-		width: auto;
-		margin-left: -9rem;
-		padding: 1rem 3rem;
-		line-height: 0.1em;
-		font-size: 1rem;
-	}
 
 	.patrocinadores {
 		padding: 6rem 4rem;
