@@ -812,14 +812,6 @@ p {
 		padding: 5rem 16rem;
 	}
 
-
-	.servicios {
-		height: 460px;
-		width: 344px;
-	}
-
-
-
 	.servicios-container h1 {
 		height: 116px;
 		width: 713px;
@@ -839,8 +831,12 @@ p {
 		margin-bottom: 10rem;
 	}
 
+	.servicios-flex {
+		max-width: 67.1875rem;
+	}
+
 	.servicios-flex .servicios {
-		margin: 0 0.625rem;
+		width: calc(33.333% - 1.5rem);
 	}
 
 	.servicios-flex .flickity-prev-next-button {
@@ -865,6 +861,7 @@ p {
 
 	.cuadro-flex {
 		justify-content: space-between;
+		padding: 2rem 1rem;
 	}
 
 	.cuadro-flex h2 {
@@ -882,7 +879,6 @@ p {
 	}
 
 	.servicios-img {
-		height: 344px;
 		width: 100%;
 	}
 
@@ -899,9 +895,12 @@ p {
 	}
 
 	.caracteristica-header-flex {
+		max-width: 90rem;
 		display: flex;
 		flex-wrap: wrap;
-		margin-bottom: 5rem;
+		align-items: center;
+		justify-content: center;
+		margin: 0 auto 6.25rem;
 	}
 
 	.caracteristica-title {
@@ -909,10 +908,17 @@ p {
 		width: 50%;
 	}
 
+	.caracteristica-title h3 {
+		margin-top: 0;
+	}
+
 	.caracteristica-p {
-		text-align: left;
-		width: 50%;
+		max-width: 30%;
 		padding-top: 1rem;
+	}
+
+	.caracteristica-p p {
+		text-align: start;
 	}
 
 	.caracteristica-flex {
@@ -964,11 +970,9 @@ p {
 		align-items: center;
 	}
 
-
 	.half-item-content-text h1 {
 		height: 38px;
 		width: 466px;
-		
 		color: #9B28AD;
 		font-size: 31.25px;
 		margin-bottom: 4rem;
@@ -992,7 +996,6 @@ p {
 		left: 362px;
 		top: 707px;
 	}
-
 
 	.ventaja-flex-2 {
 		display: flex;
