@@ -54,7 +54,7 @@ html {
 	font-family: 'Space Grotesk';
 }
 
-.header {
+.about-container .header {
 	background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(89.84deg, rgba(174, 12, 121, 0.6) 0.10%, rgba(255, 255, 255, 0) 20%),  url(../assets/img/sobre-nosotros-desktop.png);
 	background-size: cover;
 	background-repeat: no-repeat;
@@ -461,7 +461,7 @@ html {
 		min-width: 90rem; /* el ancho minimo en px es 1440px, esto hace que en pantallas aun mas anchas no se deforme */
 	}
 
-	.header {
+	.about-container .header {
 		background-image: url(../assets/img/sobre-nosotros-desktop.png);
 		background-size: cover;
 		background-repeat: no-repeat;

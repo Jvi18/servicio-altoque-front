@@ -43,6 +43,7 @@ html {
 	background-color: #f7a407;
 }
 
+
 .home-container {
 	width: 100%;
 	display: flex;
@@ -55,10 +56,10 @@ html {
 }
 
 .header {
-	background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(89.84deg, rgba(174, 12, 121, 0.6) 0.10%, rgba(255, 255, 255, 0) 20%),  url(../assets/img/shutterstock_1436740103.jpeg);
-	background-size: cover;
+	background-image: url(../assets/img/header-\ mobile.jpeg);
 	background-repeat: no-repeat;
 	background-position: center;
+	background-size: cover;
 	position: relative;
 	width: 100%;
 	height: 480px;
@@ -679,7 +680,7 @@ p {
 	}
 
 	.header {
-		background-image: url(./assets/img/header-desktop.jpg);
+		background-image: url(../assets/img/header-desktop.jpg);
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center;
