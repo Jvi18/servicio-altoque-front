@@ -1231,6 +1231,15 @@ p {
 
 /* When the browser is at least 1440px and above */
 @media screen and (min-width: 1440px) {
+
+	.header {
+		background-position: center top;
+		background-size: 100%;
+		width: 100%;
+		height: 80rem;
+	}
+
+
 	.header-ham {
 		max-width: 100.9375rem;
 		margin: auto;
