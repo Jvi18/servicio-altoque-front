@@ -55,7 +55,7 @@ html {
 }
 
 .header {
-	background: url(header- mobile.jpeg);
+	background: linear-gradient(0deg, rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)), linear-gradient(89.84deg, rgba(174, 12, 121, 0.6) 0.10%, rgba(255, 255, 255, 0) 20%),  url(../assets/img/shutterstock_1436740103.jpeg);
 	background-size: cover;
 	background-repeat: no-repeat;
 	background-position: center;
