@@ -536,10 +536,6 @@ html {
 		font-size: 1rem;
 	}
 
-	.text-container {
-		max-width: 1440px;
-		margin: 0 auto;
-	}
 
 	.header-text {
         max-width: 300px;
@@ -835,13 +831,18 @@ html {
 
 
 /* When the browser is at least 1440px and above */
-@media screen and (min-width: 1440px) {
+@media screen and (min-width: 2650px) {
 
 	.about-container .header {
 			background-position: center top;
 			background-size: 100%;
 			width: 100%;
 			height: 80rem;
+	}
+
+	.text-container {
+		max-width: 1600px;
+		margin: 0 auto;
 	}
 
 	.header-ham {
