@@ -43,7 +43,7 @@ html {
 	background-color: #f7a407;
 }
 
-.home-container {
+.about-container {
 	width: 100%;
 	display: flex;
 	flex-wrap: wrap;
@@ -457,7 +457,7 @@ html {
 /* When the browser is at least 768px and above */
 @media screen and (min-width: 768px) {
 	/* Regla css para que el diseño no se modifique en varias pantallas */
-	.home-container {
+	.about-container {
 		min-width: 90rem; /* el ancho minimo en px es 1440px, esto hace que en pantallas aun mas anchas no se deforme */
 	}
 
@@ -536,9 +536,14 @@ html {
 		font-size: 1rem;
 	}
 
+	.text-container {
+		max-width: 1440px;
+		margin: 0 auto;
+	}
+
 	.header-text {
-        max-width: 263px;
-        max-height: 144px;
+        max-width: 300px;
+        max-height: 500px;
         left: 240px;
 		position: relative;
 		top: 100px;
@@ -831,9 +836,18 @@ html {
 
 /* When the browser is at least 1440px and above */
 @media screen and (min-width: 1440px) {
+
+	.about-container .header {
+			background-position: center top;
+			background-size: 100%;
+			width: 100%;
+			height: 80rem;
+	}
+
 	.header-ham {
 		max-width: 100.9375rem;
 		margin: auto;
 		justify-content: space-between;
 	}
+
 }
