@@ -834,10 +834,9 @@ html {
 @media screen and (min-width: 2650px) {
 
 	.about-container .header {
-			background-position: center top;
-			background-size: 100%;
-			width: 100%;
-			height: 80rem;
+		background-position: center top;
+		background-size: cover;
+		width: 100%;
 	}
 
 	.text-container {
@@ -851,4 +850,11 @@ html {
 		justify-content: space-between;
 	}
 
+}
+
+/* When the browser is at least 1440px and above */
+@media screen and (min-width: 2560px) {
+	.about-container .header {
+    	height: 70rem;
+	}
 }
