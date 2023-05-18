@@ -668,6 +668,7 @@ html {
 
     .buscador-header input {
 		background: url(../assets/img/lupa.png) 5%;
+		background-color: #F2F2F23D;
 		background-repeat: no-repeat;
 		background-color: white 10%;
         border: 1px solid white;
