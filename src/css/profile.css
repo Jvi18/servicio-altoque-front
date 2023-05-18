@@ -995,8 +995,8 @@ html {
 
 /* When the browser is at least 1440px and above */
 @media screen and (min-width: 2560px) {
-	.publicacion-container .header {
-    	height: 70rem;
+	.about-container .header {
+    	height: 80rem;
 	}
 
 	.text-container {
