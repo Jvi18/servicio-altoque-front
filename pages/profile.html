@@ -28,6 +28,7 @@
 		<title>Servicio AlToque</title>
 	</head>
 	<body>
+
 		<div class="profile-container">
 			<div class="header">
                     <div class="header-flex">
@@ -50,7 +51,7 @@
                             <div class="profile-status">
                                 <button class="mensajes" id="mensajes"></button>
                                 <button class="notificaciones" id="notifaciones"></button>
-                                <img src="../src/assets/img/avatar.png">
+                                <img id="user" src="../src/assets/img/user.png">
                             </div>
                     </div>
 			</div>
@@ -90,12 +91,12 @@
                             <div class="nombre-precio">
 
                                     <div class="descripcion">
-                                        <p>DAVID PETERSEN</p>
+                                        <h2>DAVID PETERSEN</h2>
                                         <p>Redactor de articulos</p>
                                     </div>
 
                                     <div class="precios">
-                                        <span>Valor/Hora</span>
+                                        <p>Valor/Hora</p>
                                         <h2>59€</h2>
                                     </div>
 
@@ -109,7 +110,7 @@
                                         <img src="../src/assets/img/complete-star.svg"/>
                                         <img src="../src/assets/img/complete-star.svg"/>
                                         <img src="../src/assets/img/incomplete-star.svg"/>
-                                        <p id="puntaje">4.1/5</p>
+                                        <p id="puntaje">4.1 / 5</p>
                                     </div>
                                 
                                     <div class="pais-flex">
@@ -123,10 +124,10 @@
 
                             <div class="ocupacion">
                                         <h2>Freelancer experto en redacción y traducción</h2>
-                                        <a>VER TRABAJO</a>
+                                        <a href="#">VER TRABAJO</a>
                                             <div class="divisor"></div> 
                                         <p>HABILIDADES PRINCIPALES</p>
-                                        <ul class="habilidades">
+                                        <ul class="habilidades" list-style-none>
                                             <li>Escritura creativa (1 año)</li>
                                             <li>Adobe Photoshop (1 año)</li>
                                             <li>Adobe Ilustrator (1 año)</li>
@@ -138,21 +139,37 @@
                         <button class="contactar">Contactar</button>
 
                         <div class="actividad">
-                            <p>ACTIVIDAD</p>
+                            <h2>ACTIVIDAD</h2>
                             <div class="divisor"></div> 
-                                <span>120</span><p>Proyectos Completados</p>
-                                <span>5</span><p>Proyectos en Curso</p>
-                                <span>80</span><p>Horas Trabajadas</p>
+                                <div class="actividad-flex">
+                                    <span>120</span><p>Proyectos Completados</p>
+                                </div>
+                                <div class="actividad-flex">
+                                    <span>5</span><p>Proyectos en Curso</p>
+                                </div>
+                                <div class="actividad-flex">
+                                    <span>80</span><p>Horas Trabajadas</p>
+                                </div>  
                         </div>
 
                         <div class="historia">
-                            <p>INFORMACION</p>
+                            <h2>INFORMACION</h2>
                             <div class="divisor"></div> 
+                            <div class="actividad-flex">
                                 <span>98</span><p>Calificaciones de Clientes</p>
+                            </div>
+                            <div class="actividad-flex">
                                 <span>-2</span><p>Incumplimientos</p>
+                            </div>
+                            <div class="actividad-flex">
                                 <span>6</span><p>Certificaciones</p>
+                            </div>
+                            <div class="actividad-flex">
                                 <span>7 hs</span><p>Último Login</p>
+                            </div>
+                            <div class="actividad-flex">
                                 <span>4 años</span><p>Registrado</p>
+                            </div>
 
                         </div>
                         <button class="presupuesto">Pedir presupuesto</button>
@@ -160,14 +177,14 @@
                 </div>
             </div>
 
-            <div class="servicios">
+            <div class="trabajos">
                 <h1>Servicios de David Petersen</h1>
-                <div class="servicios-flex">
+                <div class="trabajos-flex">
 
-                    <div class="servicios-container">
+                    <div class="trabajos-container">
                         <img src="../src/assets/img/podcast.png">
 
-                            <div class="servicios-description">
+                            <div class="trabajos-description">
                                 <h1>Edición para podcast</h1>
                                 <p>Siempre tendrás revisiones disponibles para obtener resultados imbatibles</p>
                             </div>
@@ -178,10 +195,10 @@
                             </div>
                     </div>
 
-                    <div class="servicios-container">
+                    <div class="trabajos-container">
                         <img src="../src/assets/img/podcast.png">
 
-                            <div class="servicios-description">
+                            <div class="trabajos-description">
                                 <h1>Edición para podcast</h1>
                                 <p>Siempre tendrás revisiones disponibles para obtener resultados imbatibles</p>
                             </div>
@@ -192,10 +209,10 @@
                             </div>
                     </div>
 
-                    <div class="servicios-container">
+                    <div class="trabajos-container">
                         <img src="../src/assets/img/podcast.png">
 
-                            <div class="servicios-description">
+                            <div class="trabajos-description">
                                 <h1>Edición para podcast</h1>
                                 <p>Siempre tendrás revisiones disponibles para obtener resultados imbatibles</p>
                             </div>
@@ -206,10 +223,11 @@
                             </div>
                     </div>
 
-                    <div class="servicios-container">
+                    <div class="trabajos-container">
+
                         <img src="../src/assets/img/podcast.png">
 
-                            <div class="servicios-description">
+                            <div class="trabajos-description">
                                 <h1>Edición para podcast</h1>
                                 <p>Siempre tendrás revisiones disponibles para obtener resultados imbatibles</p>
                             </div>
@@ -220,10 +238,10 @@
                             </div>
                     </div>
 
-                    <div class="servicios-container">
+                    <div class="trabajos-container">
                         <img src="../src/assets/img/podcast.png">
 
-                            <div class="servicios-description">
+                            <div class="trabajos-description">
                                 <h1>Edición para podcast</h1>
                                 <p>Siempre tendrás revisiones disponibles para obtener resultados imbatibles</p>
                             </div>
@@ -234,10 +252,10 @@
                             </div>
                     </div>
 
-                    <div class="servicios-container">
+                    <div class="trabajos-container">
                         <img src="../src/assets/img/podcast.png">
 
-                            <div class="servicios-description">
+                            <div class="trabajos-description">
                                 <h1>Edición para podcast</h1>
                                 <p>Siempre tendrás revisiones disponibles para obtener resultados imbatibles</p>
                             </div>
