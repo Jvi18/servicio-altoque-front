@@ -465,6 +465,57 @@ ul li::before {
 }
 
 
+.habilidades {
+	background: linear-gradient(0deg, rgba(208, 208, 232, 0.6) 0%, rgba(239, 239, 249, 0.6) 101.72%);
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	justify-content: center;
+	padding: 2rem;
+}
+
+.habilidades h1 {
+	font-weight: 800;
+	text-align: center;
+	padding: 0.5rem;
+}
+
+.tablas {
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	width: 100%;
+	gap: 3rem;
+}
+
+.tablas table {
+	background-color: white;
+	color: #000000;
+	border-radius: 15px;
+	padding: 3rem;
+	text-align: center;
+	width: 100%;
+	height: auto;
+	justify-content: center;
+	margin: 0 auto;
+	font-weight: 14px;
+	font-weight: 300;
+}
+
+#encabezado {
+	background-color: #9B28AD;
+	color: white;
+	height: 60px;
+	font-weight: 800;
+}
+
+
+.tablas td{
+	padding: 0;
+	text-align: center;
+}
+
 .calificaciones {
 	display: flex;
 	flex-direction: column;
@@ -476,63 +527,71 @@ ul li::before {
 }
 
 
-
-
 .comentario-cliente {
 	padding: 1.5rem;
 	border-radius: 15px;
 	border: 1px solid #333333;
 	margin-top: 2rem;
-	width: 90%;
+	width: 95%;
 	justify-content: center;
 	align-items: center;
 	margin: 0 auto;
 }
 
-#comentario-1 {
-	margin-top: 4rem;
-}
-
-#comentario-2 {
-	margin-top: 2rem;
-	margin-bottom: 6rem ;
-}
 
 .comentario-cliente p {
 	color: #333333;
-	padding-left: 1rem;
-	font-size: 16px
+	font-size: 14px
 }
 
-#comentario-name {
-	font-weight: 800;
+#profile-picture-comentario {
+	margin: 0 auto;
 }
 
 .comentario-cliente h1 {
 	font-weight: 800;
 	font-size: 18px;
-}
-
-.comentarios-footer a{
-	display: flex;
 	text-align: center;
-	margin: 0 auto;
 	justify-content: center;
 	align-items: center;
+}
+
+.comentario-flex-left {
+	margin: 0 auto;
+	justify-content: center;
+	max-width: 200px;
 	text-align: center;
-	color: #4A076A;
-	text-decoration: none;
-	font-family: 'Space Grotesk';
-	padding-bottom: 5rem;
 }
 
-
-
-.comentario-content p {
-	font-size: 14px;
-	line-height: 22.4px;
+.comentario-cliente .calificacion-flex {
+	padding-top: 4rem;
+	margin-left: -1rem;
 }
 
+.comentario-flex-left p {
+	margin-left: 1rem;
+	margin-bottom: 0;
+}
+
+.comentario-header-right {
+	max-width: 220px;
+	margin-left: 3rem;
+	padding: 0 1.7rem;
+	margin: 0 auto;
+
+}
+
+#tipo {
+	font-size: 18px;
+	margin-left: -2rem;
+	margin-top: -2rem;
+	color:#AE0C79;
+	font-weight: 500;
+}
+
+.comentario-title h1 {
+	font-size: 27px;
+}
 
 .footer {
 	padding: 1rem;
@@ -724,37 +783,30 @@ ul li::before {
 		gap: 3rem;
 	}
 
-	
-
-	
-
-
-
-	.comentarios {
-		display: flex;
-		flex-direction: column;
-		max-width: 1600px;
-		justify-content: center;
-		align-items: center;
-		margin: 0 auto;
+	.habilidades {
 		padding: 5rem;
-		padding-bottom: 0;
-	}
-
-	.comentarios h2 {
-		width: 20%;
-	}
-
-	.comentarios form {
 		display: flex;
-		width: 50%;
-		justify-content: right;
-		align-items: right;
 	}
 
-	.comentarios label {
-		width: 30%;
-		padding-top: 1.6rem;
+	.habilidades h1 {
+		padding-bottom: 5rem;
+		margin-left: -50rem;
+		justify-content: flex-start;
+		align-items: left;
+	}
+
+	.tablas {
+		max-width: 1000px;
+		display: flex;
+		flex-direction: row;
+		gap: 0;
+	}
+
+	#encabezado {
+		height: 95px;
+	}
+	.tablas td {
+		padding: 1rem;
 	}
 
 	.comentarios-flex {
@@ -764,11 +816,6 @@ ul li::before {
 		justify-content: space-between;
 		max-width: 1200px;
 		padding-top: 2rem;
-	}
-
-	#nro-comentarios {
-		justify-content: left;
-		padding-top: 1.6rem;
 	}
 
 
@@ -807,19 +854,49 @@ ul li::before {
 		line-height: 43.75px;
 		padding-left: 0.7rem;
 	}
+	
+	.comentario-header-left {
+		max-width: 600px;
+	}
 
-	.comentario-content {
-		width: 90%;
+	.comentario-name {
+		margin-left: -3rem;
+		padding-left: 0;
+		width: 30%%;
+		justify-content: left;
 	}
 
 
-	.comentarios-footer {
+	.comentario-flex-left {
 		display: flex;
-		margin: 0 auto;
-		justify-content: center;
-		align-items: center;
-		margin-bottom: 3rem;
-		font-family: 'Space Grotesk';
+		flex-direction: wrap;
+		width: 100%;
+	}
+
+	
+
+	.comentario-text .calificacion-flex img{
+		margin-left: -0.8rem;
+	}
+	.comentario-text .calificacion-flex p { 
+		margin-left: -3rem;
+		width: 10rem;
+	}
+	.comentario-header-right {
+		max-width: 600px;
+		display: flex;
+		flex-direction: row;
+		padding: 0;
+	}
+
+	#tipo {
+		padding-top: 1.9rem;
+		margin-left: 0;
+		padding-right: 0;
+		margin-right: 0;
+		width: 70%;
+	}
+
 	}
 
 
