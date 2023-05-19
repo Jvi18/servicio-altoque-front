@@ -593,6 +593,12 @@ ul li::before {
 	font-size: 27px;
 }
 
+.footer-flex {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
 .footer {
 	padding: 1rem;
 	padding-top: 3rem;
@@ -617,11 +623,11 @@ ul li::before {
 .footer-barra-flex {
 	align-items: center;
 	justify-content: center;
-	width: 100%;
+	width: 60%;
 }
 
 .footer-barra-flex {
-	margin: auto;
+	margin: 0 auto;
 	display: flex;
 	padding-bottom: 1rem;
 }
@@ -862,8 +868,7 @@ ul li::before {
 	.comentario-name {
 		margin-left: -3rem;
 		padding-left: 0;
-		width: 30%%;
-		justify-content: left;
+		width: 100%;
 	}
 
 
