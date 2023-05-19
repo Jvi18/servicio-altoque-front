@@ -256,14 +256,20 @@ html {
 }
 
 
-.especialidad-img {
-	height: 240px;
-	width: 240px;
+.especialidad-img  {
+	height: 230px;
+	width: 230px;
 	margin: 0;
+	padding: 1rem;
 }
 
 #especialidad-5 h2{
 	margin-left: -1rem;
+	margin-bottom: 2rem;
+}
+
+#especialidad-5 {
+	height: 378px;
 }
 
 

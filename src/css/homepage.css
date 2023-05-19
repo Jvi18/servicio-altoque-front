@@ -250,16 +250,7 @@ html {
 	color: #ffffff;
 }
 
-.patrocinadores {
-	background-color: #ffffff;
-	align-items: center;
-	justify-content: center;
-	padding: 1.5rem;
-}
 
-.patrocinadores-desktop {
-	display: none;
-}
 
 .servicios-container {
 	display: flex;
@@ -556,8 +547,18 @@ p {
 	padding-bottom: 2rem;
 }
 
-.prensa-desktop {
-	display: none;
+
+.prensa-flex {
+	max-width: 264.52px;
+	max-height: 600px;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+}
+
+.prensa-flex img {
+	margin-bottom: 5rem;
+	width: 100%;
 }
 
 .preguntas-frecuentes {
@@ -799,22 +800,6 @@ p {
 		padding: 1rem 3rem;
 		line-height: 0.1em;
 		font-size: 1rem;
-	}
-
-	.patrocinadores {
-		padding: 6rem 4rem;
-	}
-
-	.patrocinadores-mobile {
-		display: none;
-	}
-
-	.patrocinadores-desktop {
-		display: block;
-	}
-
-	.patrocinadores-desktop img {
-		width: 100%;
 	}
 
 	.servicios-container {
@@ -1073,7 +1058,8 @@ p {
 	}
 
 	.prensa {
-		padding: 5rem;
+		padding: 3rem;
+		width: 100%;
 	}
 
 	.prensa h1 {
@@ -1097,18 +1083,20 @@ p {
 
 	}
 
-	.prensa-mobile {
-		display: none;
+
+	.prensa-flex {
+		max-width: 500px;
+		flex-direction: row;
+		margin: 0 auto;
+		justify-content: center;
+		align-items: center;
 	}
 
-	.prensa-desktop {
-		max-width: 1440px;
-		margin: auto;
-		display: block;
-	}
-
-	.prensa-desktop img {
-		width: 100%;
+	.prensa-flex img {
+		width: 70%;
+		height: auto;
+		justify-content: center;
+		padding: 4rem 2rem;
 	}
 
 	.preguntas-frecuentes {
