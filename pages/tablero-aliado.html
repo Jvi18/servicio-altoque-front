@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- main css -->
+		<link rel="stylesheet" href="../src/css/main.css" />
+		<!-- BT -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Servicio AlToque</title>
+	</head>
+	<body>
+
+		<div class="tablero-container">
+
+                <div class="header">
+                        <div class="header-flex">
+                                <div class="title-header">
+                                    <img
+                                        src="../src/assets/img/logo-dark.svg"
+                                        class="title"
+                                    />
+                                </div>
+                            
+
+                                <div class="buscador-header">
+                                    <input id="buscador-input" type="text"/>
+                                    <button id="buscador-button" class="buscador-button"
+                                    >¿Qué Buscas?
+                                    </button
+                                    >
+                                </div>
+                            
+                                <div class="profile-status">
+                                    <button class="mensajes" id="mensajes"></button>
+                                    <button class="notificaciones" id="notifaciones"></button>
+                                    <img id="user" src="../src/assets/img/user.png">
+                                </div>
+                        </div>
+                </div>
+
+            
+                
+
+                <div class="tablero-aliado">
+
+
+                    <div class="panel-tablero">
+
+                        <div class="panel-busqueda">
+
+                               
+
+                                        <div class="data-input" id="palabra-clave">
+                                            <p>Palabra Clave</p>
+                                            <input type="text" id="palabra-clave">
+                                        </div>
+                                        
+                                        <div class="data-input" id="ubicacion">
+                                            <p>Ubicación</p>
+                                            <input type="text" id="ubicacion">
+                                        </div>
+
+                                        <div class="data-input" id="categoria">
+                                            <p>Categoría</p>
+                                            <input type="text" id="categoria" placeholder="Todos">
+                                        </div>
+                                    
+                                        <div class="data-input" id="sub-categoria">
+                                            <p>Categoría</p>
+                                            <input type="text" id="sub-categoria" placeholder="Todos">
+                                        </div>
+
+                                        <div class="data-input" id="rango-de-precio">
+                                            <p>Rango de precio</p>
+                                            <div class="data-input-flex" id="minimo">
+                                                <input type="text" id="minimo" placeholder="Minimo">
+                                                <input type="text" id="maximo" placeholder="Máximo">
+                                            </div>
+                                        </div>
+
+                           
+                                
+                      
+
+                                    <div class="data-input" id="tiempo">
+                                        <p>Tiempo de entrega</p>
+                                        <div class="data-input-flex" id="minimo">
+                                            <input type="text" id="minimo" placeholder="Minimo">
+                                            <input type="text" id="maximo" placeholder="Máximo">
+                                        </div>
+                                    </div>
+
+                                    
+                                    <div class="data-input" id="precio">
+                                        <p>Rango de precio</p>
+                                        <input type="range" id="precio">
+                                    </div>
+
+
+                                    <button class="buscar">BUSCAR</button>
+
+                                
+                            </div>
+                        </div>    
+            
+                        <div class="resultados-de-busqueda">
+
+                            <div class="resultados-header">
+
+                                <div class="resultados-header-left">
+                                    <h1>Resultados de busqueda</h2>
+                                    <p>256 Servicios disponibles</p>
+                                </div>
+
+                            <div class="resultados-header-right">
+
+                                <div class="switch-verificados">
+                                    <label class="switch">Solo verificados</label>
+                                        <input type="checkbox">
+                                        <span class="slider round"></span>
+                                    </label>
+                                </div>
+
+                                <div class="Ordenar">
+                                    <form action="#">
+                                        <label for="opciones">Ordenar por: </label>
+                                        <select name="opciones" id="opciones">
+                                        <option value="relevantes">Más relevantes</option>
+                                        <option value="recientes">Recientes</option>
+                                        <option value="antiguas">Antiguas</option>
+                                        <option value="todas">Todas</option>
+                                        </select>
+                                    </form>
+                                </div>  
+                               
+                            </div>
+                            </div>
+
+                        
+
+                        <div class="servicios-disponibles-flex">
+
+                            <div class="trabajos-container" id="trabajos-container-1">
+                                <img src="../src/assets/img/podcast.png">
+
+                                    <div class="trabajos-description">
+                                        <h1>Edición para podcast</h1>
+                                        <p>Siempre tendrás revisiones disponibles para obtener resultados imbatibles</p>
+                                    </div>
+
+                                    <div class="especializacion-precio">
+                                        <div class="especializacion-precio-left">
+                                            <p>Musica y audio</p>
+                                            <span>Entrega desde x</span>
+                                        </div>
+                                        <div class="especializacion-precio-right">
+                                            <p>Desde $10 USD</p>
+                                        </div>
+                                    </div>
+                            </div>
+                        </div>
+              
+
+                    <div class="footer">
+                        <div class="footer-flex">
+                            <div class="title">
+                                <img
+                                    src="../src/assets/img/logo-light.svg"
+                                    class="title"
+                                />
+                            </div>
+        
+                            <div class="footer-item" id="footer-item-1">
+                                <h2>Contacto</h2>
+                                <p>202 Altoque Road, TN 38554</p>
+                                <p>Call Us 800.275.8777</p>
+                                <p>hola@altoque.com</p>
+                            </div>
+        
+                
+        
+                            <div id="footer-item-3" class="footer-item">
+                                <h2>Inscríbete para recibir nuestra Newsletter</h2>
+                                <div class="footer-barra-flex">
+                                    <input
+                                        class="footer-input"
+                                        type="text"
+                                        placeholder="Tu direccion de E-mail"
+                                    /><button class="footer-button">Suscríbete</button>
+                                </div>
+                                <p>
+                                    Sign up with your email address to receive news and
+                                    updates
+                                </p>
+                            </div>
+                        </div>
+                        <div class="separador"></div>
+        
+                        <div class="footer-end">
+                            <div class="copyright">
+                                <p>Copyright @2022 AlToque. All right reserved</p>
+                            </div>
+        
+                            <div class="footer-links">
+                                <p>
+                                    Encuentra tu aliado Por qué Servicio al toque Sobre
+                                    nosotros Trabaja como aliado
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+		    </div>
+
+		<!-- Custom BT -->
+		<script src="./dist/bundle.js"></script>
+		<!-- BT -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>

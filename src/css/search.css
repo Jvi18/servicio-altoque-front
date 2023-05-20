@@ -557,7 +557,7 @@ html {
 /* When the browser is at least 1440px and above */
 @media screen and (min-width: 2298px) {
 
-	.publicacion-container .header {
+	.search-container .header {
 		background-position: center top;
 		background-size: cover;
 		width: 100%;
@@ -578,7 +578,7 @@ html {
 
 /* When the browser is at least 1440px and above */
 @media screen and (min-width: 2560px) {
-	.about-container .header {
+	.search-container .header {
     	height: 80rem;
 	}
 
