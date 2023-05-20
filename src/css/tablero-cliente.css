@@ -1,0 +1,507 @@
+* {
+	box-sizing: border-box;
+}
+
+body,
+html {
+	padding: 0;
+	margin: 0;
+}
+
+
+
+.tablero-container {
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin: 0; 
+	font-family: 'Space Grotesk';
+}
+
+.tablero-container .header {
+    background: linear-gradient(125.72deg, #8E26A1 23.59%, rgba(107, 39, 145, 0.971875) 42.01%, #552F97 60.43%);
+	width: 100%;
+	height: 400px;
+	padding: 1rem;
+}
+
+.header-flex {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	margin: 0 auto;
+	padding: 1rem;
+	padding-bottom: 0;
+	max-width: 350px;
+	max-height: 408px;
+}
+
+.tablero-header {
+	max-width: 330px;
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	margin: 0 auto;
+	padding-top: 5rem;
+	padding-bottom: 7.5rem;
+	
+}
+
+.buscador-header #buscador-input {
+	background: url(../assets/img/lupa.png) 5%;
+	background-repeat: no-repeat;
+	background-color: #F2F2F23D;
+	border: 1px solid white;
+	border-radius: 15px;
+	width: 100%;
+	padding: 0.7rem 1rem;
+	
+}
+
+.buscador-header #buscador-button {
+	background-color: #ED4AB3;
+	color: white;
+	font-family: 'Space Grotesk';
+	border-radius: 13px;
+	border: 1px solid white;
+	padding: 0.7rem 0.1rem;
+	font-size: 16px;
+	margin-left: -2rem;
+	width: 100%;
+}
+
+
+.profile-status {
+	width: 300px;
+	display: flex;
+	flex-direction: row;
+	padding-bottom: 0;
+	margin-bottom: 0;
+	margin-left: -2rem;
+}
+
+
+.mensajes {
+	background: url(../assets/img/hablar-boton.png) center;
+	background-color: #F2F2F23D;
+	background-repeat: no-repeat;
+	border-style: none;
+	width: 100%;
+	height: 90px;
+	margin-right: 1rem;
+}
+
+.notificaciones {
+	background: url(../assets/img/campana-boton.png) center;
+	background-color: #F2F2F23D;
+	background-repeat: no-repeat;
+	border-style: none;
+	width: 100%;
+	height: 90px;
+	margin-right: 1rem;
+}
+
+#user {
+	max-width: 77.75px;
+	max-height: 70.81px;
+	margin-bottom: 2rem;
+	margin-left: 2.5rem;
+}
+
+
+.tablero-cliente {
+	align-items: center;
+	justify-content: center;
+	display: flex;
+    margin: 0 auto;
+	flex-direction: column;
+    background: linear-gradient(0deg, #D0D0E8 0%, #EFEFF9 101.72%);
+    padding-bottom: 3rem;
+    width: 100%;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+.tablero-cliente h3 {
+    color: #ef4ab4;
+    font-weight: 700;
+    font-size: 15px;
+    padding:  2rem ;
+    justify-content: left;
+    margin-left: -3rem;
+    text-align: left;
+}
+
+#haz-algo h3 {
+    margin-left: -4rem;
+}
+
+#haz-algo img {
+    margin-right: 2rem;
+}
+
+#clientes {
+    margin-top: 2rem;
+}
+
+.usuario button {
+    background: transparent;
+    color: #9B28AD;
+    border-radius: 15px;
+    border: 1px solid #9B28AD;
+    margin-top: 1rem;
+    width: 200px;
+    height: 43px;
+    font-family: 'Space Grotesk';
+    text-align: left;
+    padding-left: 1rem;
+    font-size: 18px;
+}
+
+.haz-algo-flex {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0 auto;
+    width: 100%;
+}
+
+.haz-algo-flex a {
+    font-size: 16px;
+    font-weight: 700;
+    padding-bottom: 0;
+    color: #000000;
+    margin-bottom: 1.5rem;
+    text-decoration: none;
+    font-family: 'Space Grotesk';
+    
+}
+
+.gestionar a {
+    padding-left: 2rem;
+}
+
+#configuracion a{
+    padding-left: 2rem;
+}
+
+
+#ayuda a {
+    margin-right: 3.8rem;
+}
+
+#tablero a {
+    margin-right: 0.9rem;
+}
+
+#pedidos a {
+    margin-right: 4.4rem;
+}
+
+#balance a {
+    margin-right: 3rem;
+}
+
+#cerrar-sesion a {
+    margin-right: 0.9rem;
+}
+
+.haz-algo-flex img {
+    max-width: 18px;
+    max-height: 18px;
+    margin-top: 0.1rem;
+}
+
+#cerrar-sesion {
+    margin-top: 4rem;
+    padding-bottom: 2rem;
+}
+
+
+
+.resultados-de-busqueda {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    padding: 3rem;
+}
+
+.resultados-header {
+    margin: 0 auto;
+    padding: 1rem;
+    margin-bottom: 2rem;
+}
+
+.resultados-header h1 {
+    font-weight: 800;
+    font-size: 30px;
+    padding-top: 2rem;
+
+}
+
+
+.especializacion-precio-left span {
+    font-size: 16px;
+	font-weight: 500;
+	margin-bottom: 0;
+	color: #E019A5;
+    padding: 0;
+}
+
+.resultados-header-right label {
+    color:#9B28AD;
+    font-weight: 500;
+}
+
+.switch-verificados {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 1rem;
+}
+
+.footer-flex {
+	display: flex;
+	flex-wrap: wrap;
+	flex-direction: column;
+}
+
+.footer {
+	padding: 1rem;
+	padding-top: 4rem;
+	width: 100%;
+	background-color: #ededf4;
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-item {
+	padding-left: 0.3rem;
+    padding: 3rem;
+    
+}
+.footer-item p {
+	color: #33333399;
+    font-weight:700;
+    margin: 0;
+
+}
+
+.footer-item span {
+    color: #000000;
+    font-weight:700;
+}
+
+.footer-item h2 {
+	padding: 0;
+	color: #000000
+}
+
+.footer-barra-flex {
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+    margin: 0 auto;
+	display: flex;
+	padding-bottom: 3rem;
+    padding-top: 3rem;
+    max-width: 328px;
+    max-height: 48px;
+}
+
+
+.footer-barra-flex input {
+	border-radius: 15px;
+	width: 100%;
+	border-style: none;
+	height: 2.8rem;
+	text-align: start;
+	padding: 1rem;
+    margin-right: 4rem;
+    padding-right: 2rem;
+	
+}
+
+.footer-barra-flex button {
+	width: 50%;
+	border-radius: 15px;
+	height: 2.8rem;
+	border-style: none;
+	background-color: #2d65ee;
+	color: #ffffff;
+    
+}
+
+.separador {
+	border-bottom: 1px solid #3333332e;
+    padding: 1rem;
+}
+
+.copyright {
+	display: none;
+}
+
+/* When the browser is at least 768px and above */
+@media screen and (min-width: 768px) {
+	/* Regla css para que el diseño no se modifique en varias pantallas */
+	.tablero-container {
+		min-width: 90rem; /* el ancho minimo en px es 1440px, esto hace que en pantallas aun mas anchas no se deforme */
+	}
+
+	.tablero-container .header {
+		background-position: center;
+		color: #fff;
+		width: 100%;
+		height: 130px;
+		padding: 2rem 0;
+	}
+
+	.title-header img {
+		width: 230px;
+		height: 60px;
+	}
+
+
+	.header-flex {
+		flex-direction: row;
+		max-width: 1600px;
+	}
+
+
+	.buscador-header {
+		max-width: 600px;
+		display: flex;
+		flex-direction: row;
+		margin-top: -5rem;
+	}
+
+	.tablero-flex {
+		width: 100%;
+        display: flex;
+        flex-direction: row;
+	}
+
+
+    .tablero-cliente {
+        width: 20%;
+        justify-content: left;
+    }
+
+    .resultados-de-busqueda {
+        width: 85%;
+        display: flex;
+        flex-direction: column;
+        padding: 0 2rem ;
+        
+    }
+	
+    .resultados-header {
+        display: flex;
+        justify-content: space-between;
+        padding: 4rem 6rem ;
+        width: 100%;
+  
+    }
+	
+
+   .resultados-header-right {
+    margin-top: -2rem;
+    padding: 1rem;
+
+   }
+
+   .resultados-header-left {
+    margin-top: -1rem;
+   }
+
+
+	
+
+	.footer {
+		width: 100%;
+        margin-top: -2rem;
+	}
+
+	.footer-flex {
+		width: 100%;
+		margin: auto;
+		justify-content: center;
+		display: flex;
+		flex-direction: row;
+	}
+
+	.footer-flex .title img {
+		height: 65px;
+		width: 243px;
+		left: 240px;
+		top: 69px;
+		margin-right: 5rem;
+		margin-left: 2rem;
+
+	}
+
+	.footer-item h2 {
+		font-size: 20px;
+		margin-bottom: 1rem;
+	}
+
+	.footer-item p {
+		font-size: 16px;
+        padding-bottom: 2rem;
+	}
+
+
+
+	.footer-barra-flex {
+		justify-content: left;
+		margin-right: 11rem;
+        max-width: 466px;
+        height: 48px;
+	}
+
+	.footer-barra-flex input {
+		width: 100%;
+	}
+	
+	.footer-barra-flex button {
+		width: 60%;
+		text-align: center;
+	}
+
+	.footer-end {
+		display: flex;
+		justify-content: space-between;
+		padding-top: 0.5rem;
+		padding-left: 4rem;
+		padding-right: 4rem;
+	}
+
+	.copyright {
+		display: block;
+		font-size: 14px;
+		color: #3333335C;
+		font-weight: 400;
+	}
+
+	.footer-links {
+		font-size: 14px;
+		color: #3333335C;
+		font-weight: 400;
+	}
+}
+
+
+/* When the browser is at least 1440px and above */
+@media screen and (min-width: 2298px) {
+
+	
+
+  
+}
+

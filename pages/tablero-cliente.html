@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<!-- main css -->
+		<link rel="stylesheet" href="../src/css/main.css" />
+		<!-- BT -->
+		<link
+			href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+			rel="stylesheet"
+			integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+			crossorigin="anonymous"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap"
+			rel="stylesheet"
+		/>
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=DM+Sans&display=swap"
+			rel="stylesheet"
+		/>
+		<title>Servicio AlToque</title>
+	</head>
+	<body>
+
+		<div class="tablero-container">
+
+                <div class="header">
+                        <div class="header-flex">
+                                <div class="title-header">
+                                    <img
+                                        src="../src/assets/img/logo-dark.svg"
+                                        class="title"
+                                    />
+                                </div>
+                            
+
+                                <div class="buscador-header">
+                                    <input id="buscador-input" type="text"/>
+                                    <button id="buscador-button" class="buscador-button"
+                                    >¿Qué Buscas?
+                                    </button
+                                    >
+                                </div>
+                            
+                                <div class="profile-status">
+                                    <button class="mensajes" id="mensajes"></button>
+                                    <button class="notificaciones" id="notifaciones"></button>
+                                    <img id="user" src="../src/assets/img/user.png">
+                                </div>
+                        </div>
+                </div>
+
+            
+                    <div class="tablero-flex">
+
+                            <div class="tablero-cliente">
+
+                                        <div class="usuario" id="clientes">
+                                            <button>Clientes</button>
+                                        </div>
+
+                                        <div class="usuario" id="aliados">
+                                            <button>Aliados</button>
+                                        </div>
+                                        
+                                        
+                                        <div class="haz-algo" id="haz-algo">
+
+                                            <h3>HAZ ALGO</h3>
+
+                                            <div class="haz-algo-flex" id="tablero">
+                                                <img src="../src/assets/img/tablero.png">
+                                                <a href="#">Tablero</a>
+                                            </div>
+
+                                            <div class="haz-algo-flex" id="mensajes">
+                                                <img src="../src/assets/img/mensajes.png">
+                                                <a href="#">Mensajes</a>
+                                            </div>
+
+                                            <div class="haz-algo-flex" id="favoritos">
+                                                <img src="../src/assets/img/favoritos.png">
+                                                <a href="#">Favoritos</a>
+                                            </div>
+
+                                            <div class="haz-algo-flex" id="opiniones">
+                                                <img src="../src/assets/img/opiniones.png">
+                                                <a href="#">Opiniones</a>
+                                            </div>
+
+                                        </div>
+
+                                        <div class="gestionar" id="gestionar">
+
+                                            <h3>GESTIONAR</h3>
+
+                                            <div class="haz-algo-flex" id="pedidos">
+                                                <img src="../src/assets/img/servicios.png">
+                                                <a href="#">Mis pedidos</a>
+                                            </div>
+
+                                            <div class="haz-algo-flex" id="contratar">
+                                                <img src="../src/assets/img/promociones.png">
+                                                <a href="#">Contratar un servicio</a>
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="cuenta" id="cuenta">
+
+                                            <h3>MI CUENTA</h3>
+
+                                            <div class="haz-algo-flex" id="balance">
+                                                <img src="../src/assets/img/configuracion.png">
+                                                <a href="#">Balance</a>
+                                            </div>
+
+                                            <div class="haz-algo-flex" id="configuracion">
+                                                <img src="../src/assets/img/configuracion.png">
+                                                <a href="#">Configuracion</a>
+                                            </div>
+
+                                            <div class="haz-algo-flex" id="ayuda">
+                                                <img src="../src/assets/img/ayuda.png">
+                                                <a href="#">Ayuda</a>
+                                            </div>
+
+                                            <div class="haz-algo-flex" id="cerrar-sesion">
+                                                <img src="../src/assets/img/cerrar-sesion.png">
+                                                <a href="#">Cerrar Sesión</a>
+                                            </div>
+
+                                        </div>  
+                            </div>  
+
+
+
+                            <div class="resultados-de-busqueda">
+
+                                <div class="resultados-header">
+
+                                    <div class="resultados-header-left">
+                                        <h1>256 Servicios disponibles</h2>
+                                      
+                                    </div>
+
+                                <div class="resultados-header-right">
+
+                                    <div class="switch-verificados">
+                                        <label class="switch">Solo verificados</label>
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
+                                    </div>
+
+                                    <div class="Ordenar">
+                                        <form action="#">
+                                            <label for="opciones">Ordenar por: </label>
+                                            <select name="opciones" id="opciones">
+                                            <option value="relevantes">Más relevantes</option>
+                                            <option value="recientes">Recientes</option>
+                                            <option value="antiguas">Antiguas</option>
+                                            <option value="todas">Todas</option>
+                                            </select>
+                                        </form>
+                                    </div>  
+                                        
+                    
+                            </div>
+                    
+                        </div>
+                    </div>
+                </div>
+
+                    <div class="footer">
+                        <div class="footer-flex">
+                            <div class="title">
+                                <img
+                                    src="../src/assets/img/logo-light.svg"
+                                    class="title"
+                                />
+                            </div>
+        
+                            <div class="footer-item" id="footer-item-1">
+                                <h2>Contacto</h2>
+                                <p>202 Altoque Road, TN 38554</p>
+                                <p>Call Us <span>800.275.8777</span></p>
+                                <p>hola@altoque.com</p>
+                            </div>
+        
+                
+        
+                            <div id="footer-item-3" class="footer-item">
+                                <h2>Inscríbete para recibir nuestra Newsletter</h2>
+                                <div class="footer-barra-flex">
+                                    <input
+                                        class="footer-input"
+                                        type="text"
+                                        placeholder="Tu direccion de E-mail"
+                                    /><button class="footer-button">Suscríbete</button>
+                                </div>
+                                <p>
+                                    Sign up with your email address to receive news and
+                                    updates
+                                </p>
+                            </div>
+                        </div>
+                        <div class="separador"></div>
+        
+                        <div class="footer-end">
+                            <div class="copyright">
+                                <p>Copyright @2022 AlToque. All right reserved</p>
+                            </div>
+        
+                            <div class="footer-links">
+                                <p>
+                                    Encuentra tu aliado Por qué Servicio al toque Sobre
+                                    nosotros Trabaja como aliado
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+		    </div>
+
+		<!-- Custom BT -->
+		<script src="./dist/bundle.js"></script>
+		<!-- BT -->
+		<script
+			src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+			integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+			crossorigin="anonymous"
+		></script>
+	</body>
+</html>
