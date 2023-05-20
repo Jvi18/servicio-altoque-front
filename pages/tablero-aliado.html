@@ -58,127 +58,122 @@
                 </div>
 
             
-                
+                    <div class="tablero-flex">
 
-                <div class="tablero-aliado">
+                            <div class="tablero-aliado">
 
+                                        <div class="usuario" id="clientes">
+                                            <button>Clientes</button>
+                                        </div>
 
-                    <div class="panel-tablero">
-
-                        <div class="panel-busqueda">
-
-                               
-
-                                        <div class="data-input" id="palabra-clave">
-                                            <p>Palabra Clave</p>
-                                            <input type="text" id="palabra-clave">
+                                        <div class="usuario" id="aliados">
+                                            <button>Aliados</button>
                                         </div>
                                         
-                                        <div class="data-input" id="ubicacion">
-                                            <p>Ubicación</p>
-                                            <input type="text" id="ubicacion">
-                                        </div>
+                                        
+                                        <div class="haz-algo" id="haz-algo">
 
-                                        <div class="data-input" id="categoria">
-                                            <p>Categoría</p>
-                                            <input type="text" id="categoria" placeholder="Todos">
-                                        </div>
-                                    
-                                        <div class="data-input" id="sub-categoria">
-                                            <p>Categoría</p>
-                                            <input type="text" id="sub-categoria" placeholder="Todos">
-                                        </div>
+                                            <h3>HAZ ALGO</h3>
 
-                                        <div class="data-input" id="rango-de-precio">
-                                            <p>Rango de precio</p>
-                                            <div class="data-input-flex" id="minimo">
-                                                <input type="text" id="minimo" placeholder="Minimo">
-                                                <input type="text" id="maximo" placeholder="Máximo">
+                                            <div class="haz-algo-flex" id="tablero">
+                                                <img src="../src/assets/img/tablero.png">
+                                                <a href="#">Tablero</a>
                                             </div>
+
+                                            <div class="haz-algo-flex" id="mensajes">
+                                                <img src="../src/assets/img/mensajes.png">
+                                                <a href="#">Mensajes</a>
+                                            </div>
+
+                                            <div class="haz-algo-flex" id="favoritos">
+                                                <img src="../src/assets/img/favoritos.png">
+                                                <a href="#">Favoritos</a>
+                                            </div>
+
+                                            <div class="haz-algo-flex" id="opiniones">
+                                                <img src="../src/assets/img/opiniones.png">
+                                                <a href="#">Opiniones</a>
+                                            </div>
+
                                         </div>
 
-                           
-                                
-                      
+                                        <div class="gestionar" id="gestionar">
 
-                                    <div class="data-input" id="tiempo">
-                                        <p>Tiempo de entrega</p>
-                                        <div class="data-input-flex" id="minimo">
-                                            <input type="text" id="minimo" placeholder="Minimo">
-                                            <input type="text" id="maximo" placeholder="Máximo">
+                                            <h3>GESTIONAR</h3>
+
+                                            <div class="haz-algo-flex" id="servicios">
+                                                <img src="../src/assets/img/servicios.png">
+                                                <a href="#">Mis servicios</a>
+                                            </div>
+
+                                            <div class="haz-algo-flex" id="promociones">
+                                                <img src="../src/assets/img/promociones.png">
+                                                <a href="#">Promociones</a>
+                                            </div>
+
                                         </div>
+
+
+                                        <div class="cuenta" id="cuenta">
+
+                                            <h3>MI CUENTA</h3>
+
+                                            <div class="haz-algo-flex" id="configuracion">
+                                                <img src="../src/assets/img/configuracion.png">
+                                                <a href="#">Configuracion</a>
+                                            </div>
+
+                                            <div class="haz-algo-flex" id="ayuda">
+                                                <img src="../src/assets/img/ayuda.png">
+                                                <a href="#">Ayuda</a>
+                                            </div>
+
+                                            <div class="haz-algo-flex" id="cerrar-sesion">
+                                                <img src="../src/assets/img/cerrar-sesion.png">
+                                                <a href="#">Cerrar Sesión</a>
+                                            </div>
+
+                                        </div>  
+                            </div>  
+
+
+
+                            <div class="resultados-de-busqueda">
+
+                                <div class="resultados-header">
+
+                                    <div class="resultados-header-left">
+                                        <h1>256 Servicios disponibles</h2>
+                                      
                                     </div>
 
-                                    
-                                    <div class="data-input" id="precio">
-                                        <p>Rango de precio</p>
-                                        <input type="range" id="precio">
+                                <div class="resultados-header-right">
+
+                                    <div class="switch-verificados">
+                                        <label class="switch">Solo verificados</label>
+                                            <input type="checkbox">
+                                            <span class="slider round"></span>
+                                        </label>
                                     </div>
 
-
-                                    <button class="buscar">BUSCAR</button>
-
-                                
+                                    <div class="Ordenar">
+                                        <form action="#">
+                                            <label for="opciones">Ordenar por: </label>
+                                            <select name="opciones" id="opciones">
+                                            <option value="relevantes">Más relevantes</option>
+                                            <option value="recientes">Recientes</option>
+                                            <option value="antiguas">Antiguas</option>
+                                            <option value="todas">Todas</option>
+                                            </select>
+                                        </form>
+                                    </div>  
+                                        
+                    
                             </div>
-                        </div>    
-            
-                        <div class="resultados-de-busqueda">
-
-                            <div class="resultados-header">
-
-                                <div class="resultados-header-left">
-                                    <h1>Resultados de busqueda</h2>
-                                    <p>256 Servicios disponibles</p>
-                                </div>
-
-                            <div class="resultados-header-right">
-
-                                <div class="switch-verificados">
-                                    <label class="switch">Solo verificados</label>
-                                        <input type="checkbox">
-                                        <span class="slider round"></span>
-                                    </label>
-                                </div>
-
-                                <div class="Ordenar">
-                                    <form action="#">
-                                        <label for="opciones">Ordenar por: </label>
-                                        <select name="opciones" id="opciones">
-                                        <option value="relevantes">Más relevantes</option>
-                                        <option value="recientes">Recientes</option>
-                                        <option value="antiguas">Antiguas</option>
-                                        <option value="todas">Todas</option>
-                                        </select>
-                                    </form>
-                                </div>  
-                               
-                            </div>
-                            </div>
-
-                        
-
-                        <div class="servicios-disponibles-flex">
-
-                            <div class="trabajos-container" id="trabajos-container-1">
-                                <img src="../src/assets/img/podcast.png">
-
-                                    <div class="trabajos-description">
-                                        <h1>Edición para podcast</h1>
-                                        <p>Siempre tendrás revisiones disponibles para obtener resultados imbatibles</p>
-                                    </div>
-
-                                    <div class="especializacion-precio">
-                                        <div class="especializacion-precio-left">
-                                            <p>Musica y audio</p>
-                                            <span>Entrega desde x</span>
-                                        </div>
-                                        <div class="especializacion-precio-right">
-                                            <p>Desde $10 USD</p>
-                                        </div>
-                                    </div>
-                            </div>
+                    
                         </div>
-              
+                    </div>
+                </div>
 
                     <div class="footer">
                         <div class="footer-flex">
@@ -192,7 +187,7 @@
                             <div class="footer-item" id="footer-item-1">
                                 <h2>Contacto</h2>
                                 <p>202 Altoque Road, TN 38554</p>
-                                <p>Call Us 800.275.8777</p>
+                                <p>Call Us <span>800.275.8777</span></p>
                                 <p>hola@altoque.com</p>
                             </div>
         
